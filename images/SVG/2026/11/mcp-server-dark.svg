@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="360" viewBox="0 0 400 360" fill="none" role="img" aria-labelledby="command-brand-title command-brand-desc">
+  <title id="command-brand-title">MCP server by EireaNet, Inc.</title>
+  <desc id="command-brand-desc">A gentle continuous terminal loop with persistent frame, activity dots, prompt, command and response strokes.</desc>
+  <style>
+    /* Persistent strokes and matching loop endpoints avoid erase/reappear flicker. */
+    .terminal-frame{animation:frame-cycle 8s ease-in-out infinite}
+    .frame-trace{stroke-dasharray:12 88;opacity:.65;animation:trace-cycle 8s linear infinite}
+    .terminal-dot{animation:dot-cycle 8s ease-in-out infinite}
+    .activity-dot{animation:dot-cycle 8s -4s ease-in-out infinite}
+    .terminal-prompt{animation:prompt-cycle 8s ease-in-out infinite}
+    .command-text,.terminal-cursor{transform-box:fill-box;transform-origin:left center}
+    .command-text{animation:command-cycle 8s ease-in-out infinite}
+    .terminal-cursor{animation:command-cycle 8s -4s ease-in-out infinite}
+    .brand-title{animation:caption-cycle 8s ease-in-out infinite}
+    .brand-byline{animation:caption-cycle 8s -2s ease-in-out infinite}
+    @keyframes frame-cycle{0%,100%{stroke-width:14}50%{stroke-width:14.8}}
+    @keyframes trace-cycle{from{stroke-dashoffset:0}to{stroke-dashoffset:-100}}
+    @keyframes dot-cycle{0%,100%{fill:#08775F}50%{fill:#72DDB9}}
+    @keyframes prompt-cycle{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
+    @keyframes command-cycle{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.94)}}
+    @keyframes caption-cycle{0%,100%{transform:translateY(0)}50%{transform:translateY(-.5px)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <g transform="translate(79.5 28)">
+    <rect class="terminal-frame" pathLength="100" x="12" y="12" width="217" height="202" rx="28" stroke="#72DDB9" stroke-width="14"/>
+    <rect class="frame-trace" pathLength="100" x="12" y="12" width="217" height="202" rx="28" stroke="#ADF0D6" stroke-width="6" stroke-linecap="round" opacity="0"/>
+    <circle class="terminal-dot" cx="48" cy="48" r="7" fill="#ADF0D6"/>
+    <circle class="activity-dot" cx="73" cy="48" r="7" fill="#ADF0D6"/>
+    <path class="terminal-prompt" pathLength="100" d="M44 103 84 135 44 166" stroke="#72DDB9" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="terminal-cursor" pathLength="100" d="M112 168H190" stroke="#E8F3EE" stroke-width="19" stroke-linecap="round"/>
+    <path class="command-text" pathLength="100" d="M112 107H173" stroke="#ADF0D6" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text class="brand-title" x="200" y="299" fill="#E8F3EE" font-size="32" font-weight="700" letter-spacing="-.8">MCP server</text>
+    <text class="brand-byline" x="200" y="331" fill="#AAC1B5" font-size="18" letter-spacing=".4">by EireaNet, Inc.</text>
+  </g>
+</svg>

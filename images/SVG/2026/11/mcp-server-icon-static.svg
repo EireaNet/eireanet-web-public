@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="248" height="248" viewBox="0 0 248 248" fill="none" role="img" aria-labelledby="command-icon-title command-icon-desc">
+  <title id="command-icon-title">EireaNet MCP server</title>
+  <desc id="command-icon-desc">A static green command terminal mark for EireaNet MCP server.</desc>
+  <g transform="translate(3.5 11)">
+    <rect class="terminal-frame" pathLength="100" x="12" y="12" width="217" height="202" rx="28" stroke="#08775F" stroke-width="14"/>
+    <rect class="frame-trace" pathLength="100" x="12" y="12" width="217" height="202" rx="28" stroke="#72DDB9" stroke-width="6" stroke-linecap="round" opacity="0"/>
+    <circle class="terminal-dot" cx="48" cy="48" r="7" fill="#08775F"/>
+    <circle class="activity-dot" cx="73" cy="48" r="7" fill="#72DDB9"/>
+    <path class="terminal-prompt" pathLength="100" d="M44 103 84 135 44 166" stroke="#08775F" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="terminal-cursor" pathLength="100" d="M112 168H190" stroke="#1C2B33" stroke-width="19" stroke-linecap="round"/>
+    <path class="command-text" pathLength="100" d="M112 107H173" stroke="#72DDB9" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

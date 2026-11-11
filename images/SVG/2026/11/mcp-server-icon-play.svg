@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="248" height="248" viewBox="0 0 248 248" fill="none" role="img" aria-labelledby="command-icon-title command-icon-desc">
+  <title id="command-icon-title">EireaNet MCP server</title>
+  <desc id="command-icon-desc">A gentle continuous terminal loop with persistent frame, activity dots, prompt, command and response strokes.</desc>
+  <style>
+    /* Persistent strokes and matching loop endpoints avoid erase/reappear flicker. */
+    .terminal-frame{animation:frame-cycle 8s ease-in-out infinite}
+    .frame-trace{stroke-dasharray:12 88;opacity:.65;animation:trace-cycle 8s linear infinite}
+    .terminal-dot{animation:dot-cycle 8s ease-in-out infinite}
+    .activity-dot{animation:dot-cycle 8s -4s ease-in-out infinite}
+    .terminal-prompt{animation:prompt-cycle 8s ease-in-out infinite}
+    .command-text,.terminal-cursor{transform-box:fill-box;transform-origin:left center}
+    .command-text{animation:command-cycle 8s ease-in-out infinite}
+    .terminal-cursor{animation:command-cycle 8s -4s ease-in-out infinite}
+    .brand-title{animation:caption-cycle 8s ease-in-out infinite}
+    .brand-byline{animation:caption-cycle 8s -2s ease-in-out infinite}
+    @keyframes frame-cycle{0%,100%{stroke-width:14}50%{stroke-width:14.8}}
+    @keyframes trace-cycle{from{stroke-dashoffset:0}to{stroke-dashoffset:-100}}
+    @keyframes dot-cycle{0%,100%{fill:#08775F}50%{fill:#72DDB9}}
+    @keyframes prompt-cycle{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
+    @keyframes command-cycle{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.94)}}
+    @keyframes caption-cycle{0%,100%{transform:translateY(0)}50%{transform:translateY(-.5px)}}
+  </style>
+  <g transform="translate(3.5 11)">
+    <rect class="terminal-frame" pathLength="100" x="12" y="12" width="217" height="202" rx="28" stroke="#08775F" stroke-width="14"/>
+    <rect class="frame-trace" pathLength="100" x="12" y="12" width="217" height="202" rx="28" stroke="#72DDB9" stroke-width="6" stroke-linecap="round" opacity="0"/>
+    <circle class="terminal-dot" cx="48" cy="48" r="7" fill="#08775F"/>
+    <circle class="activity-dot" cx="73" cy="48" r="7" fill="#72DDB9"/>
+    <path class="terminal-prompt" pathLength="100" d="M44 103 84 135 44 166" stroke="#08775F" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="terminal-cursor" pathLength="100" d="M112 168H190" stroke="#1C2B33" stroke-width="19" stroke-linecap="round"/>
+    <path class="command-text" pathLength="100" d="M112 107H173" stroke="#72DDB9" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>
